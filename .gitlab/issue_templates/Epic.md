@@ -20,7 +20,7 @@ or
 
 # Requirements
 <!--
-What does the solution needs to ensure for being succesful?
+What does the solution needs to ensure for being successful?
 
 For example:
 * Work on small form factors and touch

@@ -1,4 +1,4 @@
-## Podcasts release proccess
+## Podcasts release process
 
 * Ensure there was a post-release version bump last time
 * Update CHANGELOG.md

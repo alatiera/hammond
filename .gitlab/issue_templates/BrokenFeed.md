@@ -8,7 +8,7 @@ example.com/podcast
 
 **Detailed description of the issue**
 
-Would be helpfull if error messages where included from stderr.
+Would be helpful if error messages where included from stderr.
 If you are not sure how to do it, feel free to ask and we will walk you through it!
 
 Some common cases might be:

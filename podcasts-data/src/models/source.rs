@@ -150,7 +150,7 @@ impl Source {
     // 304: Up to date Feed, checked with the Etag
     // 307: Temporary redirect of the url
     // 308: Permanent redirect of the url
-    // 401: Unathorized
+    // 401: Unauthorized
     // 403: Forbidden
     // 408: Timeout
     // 410: Feed deleted

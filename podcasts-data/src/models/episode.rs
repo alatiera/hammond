@@ -271,7 +271,7 @@ impl EpisodeWidgetModel {
         self.show_id
     }
 
-    /// Sets the `played` value with the current `epoch` timestap and save it.
+    /// Sets the `played` value with the current `epoch` timestamp and save it.
     pub fn set_played_now(&mut self) -> Result<(), DataError> {
         let epoch = Utc::now().timestamp() as i32;
         self.set_played(Some(epoch));

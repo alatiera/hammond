@@ -957,7 +957,7 @@ impl PlayerWrapper {
             .player
             .connect_end_of_stream(clone!(@strong sender, @strong weak => move |_| {
                 if let Some(player_widget) = weak.get().upgrade() {
-                    // write postion to db
+                    // write position to db
                     player_widget.borrow_mut().info.ep.as_mut().map(|ep| {
                         ep.set_play_position(0)?;
                         ep.set_played_now()?;

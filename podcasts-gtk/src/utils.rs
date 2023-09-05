@@ -345,7 +345,7 @@ pub(crate) fn set_image_from_path(image: &gtk::Image, show_id: i32, size: u32) -
 
     // Check if there's an active download about this show cover.
     // If there is, a callback will be set so this function will be called again.
-    // If it fails another download will be scheduled. WTF??? how is this not downlaoding infinitly
+    // If it fails another download will be scheduled. WTF??? how is this not downloading infinitely
     if let Ok(guard) = COVER_DL_REGISTRY.read() {
         if guard.contains(&show_id) {
             let callback = clone!(@weak image => @default-return glib::ControlFlow::Break, move || {

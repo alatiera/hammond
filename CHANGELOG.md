@@ -58,7 +58,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed:
 - Fix the wrong User-Agent header being sent World/podcasts!207
-- Make newlines display in episode descritpions display correctly World/podcasts!206
+- Make newlines display in episode descriptions display correctly World/podcasts!206
 
 ## [0.5.0-beta] - 2021-08-20
 
@@ -119,7 +119,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed:
  - Fix phantom window World/podcasts!128
  - <enter> to add feed World/podcasts!130
- - Prevent simultanious refreshes World/podcasts!133
+ - Prevent simultaneous refreshes World/podcasts!133
  - Fix buttons in speed menu World/podcasts!134
  - Internationalisation fixes
 
@@ -137,7 +137,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Improved integration of cargo and meson World/podcasts!94
 - Refactored some macros for error handling World/podcasts!82
 - Refactored the handling of styling changes World/podcasts!119
-- Updated the icon to better match the HIG guidlines World/podcasts#102
+- Updated the icon to better match the HIG guidelines World/podcasts#102
 - Made Podcasts use a GtkApplication subclass World/podcasts!113
 - Updated the MPRIS permissions in order to remove a sandbox hole World/podcasts!124
 - Bumped gtk and libhandy minimum versions
@@ -165,7 +165,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - The applciation will no longer scale below 360p in width 1933c79f7a87d8261d91ca4e14eb51c1ddc66624
 - Update to the latest HIG 5050dda4d2f75b706842de8507d115dd5a1bd0a9
 - Chris, @brainblasted, upgraded hyper to 0.12, this brings openssl 1.1 support !75
-- Pipeline backend is now completly migrated to tokio-runtime 0887789f5e653dd92ad397fb39561df6dffcb45c
+- Pipeline backend is now completely migrated to tokio-runtime 0887789f5e653dd92ad397fb39561df6dffcb45c
 - Resume playing an episode will attempt to rewind the track only if more than a minute has passed since the last pause !76
 
 ### Fixed:
@@ -204,19 +204,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - [OARS](https://hughsie.github.io/oars/) Tags where added for compatibility with Store clients b0c94dd9
 - Daniel added support for Translations !46
 - Svitozar Cherepii(@svito) created a [wiki page](https://wiki.gnome.org/Apps/Podcasts) 70e79e50
-- Libhandy was added as a dependancy #70
+- Libhandy was added as a dependency #70
 - Development builds can now be installed in parallel with stable builds !64
 
 ### Changed:
 - The update indication was moved to an In-App notification #72
 - The app icon's accent color was changed from orange to red 0dfb4859
-- The stack switcher in the Headerbar is now insesitive on Empty Views !63
+- The stack switcher in the Headerbar is now insensitive on Empty Views !63
 
 ### Fixed:
 - Improved handling of HTTP redirections #64 !61 !62
 - Fixed a major performance regression when loading show covers !67
-- More refference cycles have been fixed !59
-- OPML import dialog now exits properly and no longer keeps the application from shuting down !65
+- More reference cycles have been fixed !59
+- OPML import dialog now exits properly and no longer keeps the application from shutting down !65
 - Update action is disabled if there isn't something to update #71
 
 ### Translations:
@@ -234,10 +234,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed:
 - `SendCell` crate was replaced with `Fragile`. (Jorda Petridis) 838320785ebbea94e009698b473495cfec076f54
-- Update dependancies (Jorda Petridis) 91bea8551998b16e44e5358fdd43c53422bcc6f3
+- Update dependencies (Jorda Petridis) 91bea8551998b16e44e5358fdd43c53422bcc6f3
 
 ### Fixed:
-- Fix more refference cycles. (Jorda Petridis) 3496df24f8d8bfa8c8a53d8f00262d42ee39b41c
+- Fix more reference cycles. (Jorda Petridis) 3496df24f8d8bfa8c8a53d8f00262d42ee39b41c
 - Actually fix cargo-vendor (Jorda Petridis)
 
 ## [0.4.3] - 2018-07-27
@@ -262,7 +262,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Custom icons for the fast-forward and rewind actions in the Player were added. (Tobias Bernard) e77000076b3d78b8625f4c7ef367376d0130ece6
 - Hicolor and symbolic icons for the Application. (Tobias Bernard and Sam Hewitt) edae1b04801dba9d91d5d4145db79b287f0eec2c
 - Basic prefferences dialog (Zander Brown). [34](https://gitlab.gnome.org/World/podcasts/merge_requests/34)
-- Dbus service preperation. Not used till the MPRIS2 integration has landed. (Zander Brown) [42](https://gitlab.gnome.org/World/podcasts/merge_requests/42)
+- Dbus service preparation. Not used till the MPRIS2 integration has landed. (Zander Brown) [42](https://gitlab.gnome.org/World/podcasts/merge_requests/42)
 - Episodes and Images will only get drawn when needed. Big Performance impact. (Jordan Petridis) [43](https://gitlab.gnome.org/World/podcasts/merge_requests/43)
 
 ### Changed:
@@ -290,13 +290,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - The `EpisdeWidget` was refactored.
 [!38](https://gitlab.gnome.org/World/podcasts/merge_requests/38)
 - `EpisdeWidget`'s progressbar was changed to be non-blocking and should feel way more responsive now. 9b0ac5b83dadecdff51cd398293afdf0d5276012
-- An embeded audio player was implemented!
+- An embedded audio player was implemented!
 [!40](https://gitlab.gnome.org/World/podcasts/merge_requests/40)
 - Various Database changes.
 [!41](https://gitlab.gnome.org/World/podcasts/merge_requests/41)
 
 ### Fixed:
-- Fixed a bug whre the about dialog would be unclosable. (ZanderBrown) [!37](https://gitlab.gnome.org/World/podcasts/merge_requests/37)
+- Fixed a bug where the about dialog would be unclosable. (ZanderBrown) [!37](https://gitlab.gnome.org/World/podcasts/merge_requests/37)
 
 ## [0.3.4] - 2018-05-20
 ### Fixed:
@@ -309,9 +309,9 @@ not being able to access any file.
 - ShowsView now rembmers the vertical alignment of the scrollbar between refreshes. 4d2b64e79d8518454b3677612664cd32044cf837
 
 ### Changed:
-- Minimum `rustc` version requirment was bumped to `1.26`
+- Minimum `rustc` version requirement was bumped to `1.26`
 - Some animations should be smoother now. 7d598bb1d08b05fd5ab532657acdad967c0afbc3
-- InAppNotification now can be used to propagate some erros to the user. 7035fe05c4741b3e7ccce6827f72766226d5fc0a and 118dac5a1ab79c0b4ebe78e88256a4a38b138c04
+- InAppNotification now can be used to propagate some errors to the user. 7035fe05c4741b3e7ccce6827f72766226d5fc0a and 118dac5a1ab79c0b4ebe78e88256a4a38b138c04
 
 ### Fixed:
 - Fixed a of by one bug in the `ShowsView` where the last show was never shown. bd12b09cbc8132fd39a266fd091e24bc6c3c040f
@@ -321,18 +321,18 @@ not being able to access any file.
 - Vies now have a new fancy scrolling animation when they are refereshed.
 
 ### Changed:
-- Downlaoding and loading images now is done asynchronously and is not blocking programs execution.
+- Downloading and loading images now is done asynchronously and is not blocking programs execution.
 [#7](https://gitlab.gnome.org/World/podcasts/issues/7)
 - Bold, italics links and some other `html` tags can now be rendered in the Show Description.
 [#25](https://gitlab.gnome.org/World/podcasts/issues/25)
 - `Rayon` Threadpools are now used instead of unlimited one-off threads.
-- `EpisdeWidget`s are now loaded asynchronously accross views.
+- `EpisdeWidget`s are now loaded asynchronously across views.
 - `EpisodeWidget`s no longer trigger a `View` refresh for trivial stuff 03bd95184808ccab3e0ea0e3713a52ee6b7c9ab4
 - `ShowWidget` layout was changed 9a5cc1595d982f3232ee7595b83b6512ac8f6c88
 - `ShowWidget` Description is inside a scrolled window now
 
 ### Fixed:
-- `EpisodeWidget` Height now is consistent accros views [#57](https://gitlab.gnome.org/World/podcasts/issues/57)
+- `EpisodeWidget` Height now is consistent across views [#57](https://gitlab.gnome.org/World/podcasts/issues/57)
 - Implemented a tail-recursion loop to follow-up when a feed redirects to another url. c6a24e839a8ba77d09673f299cfc1e64ba7078f3
 
 ### Removed:
@@ -354,7 +354,7 @@ not being able to access any file.
 ### Changed:
 - EpisdeWidget has been reimplemented as a compile time state machine.
 [!18](https://gitlab.gnome.org/World/podcasts/merge_requests/18)
-- Content Views no longer scroll horizontally when shrunk bellow their minimum size.
+- Content Views no longer scroll horizontally when shrunk below their minimum size.
 [#35](https://gitlab.gnome.org/World/podcasts/issues/35)
 - Some requests now use the Tor Browser's user agent. (Rowan Lewis)
 [#53](https://gitlab.gnome.org/World/podcasts/issues/53)
